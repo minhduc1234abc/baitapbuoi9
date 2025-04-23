@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .container {
+        display: flex;
+        flex: 1;
+        width: 100%;
+      }
+
+      .sidebar {
+        width: 220px;
+        background: #1e1e2f;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        height: 100%;
+      }
+
+      .logo {
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .nav-link {
+        display: block;
+        color: #ccc;
+        padding: 12px 0;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #fff;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+      }
+      .content {
+        margin-left: 220px;
+        padding: 40px;
+        width: calc(100% - 220px);
+      }
+
+      section {
+        min-height: 100vh;
+        padding: 40px 0;
+        border-bottom: 1px solid #ccc;
+      }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          position: relative;
+          width: 100%;
+          height: auto;
+          text-align: center;
+        }
+
+        .content {
+          margin-left: 0;
+          width: 100%;
+          padding: 20px;
+        }
+
+        .nav-link {
+          display: inline-block;
+          margin: 0 10px;
+        }
+      }
+      a {
+        text-decoration: none;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2 class="logo">MyWeb</h2>
+        <nav>
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#baitap" class="nav-link">Bài tập</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section id="home">
+          <h1>🏠 Home</h1>
+          <h1>VŨ minh đức </h1>
+          <h2> ước mơ làm giám đốc </h2>
+          <h2>
+            Sở thích: chơi valorant chơi bóng rổ và đi ngủngủ
+            
+          </h2>
+          <h2>Nghề nghiệp định hướng:làm giám đốc =))))))))))</h2>
+        </section>
+        <section id="about">
+          <h1>👤 About Me</h1>
+          <p>
+            Ngành IT Việt Nam hiện nay ở đầu của sự phát triển. Có thể nói IT là
+            vua của các nghề. Vừa có tiền, có quyền. Vừa kiếm được nhiều $ lại
+            được xã hội trọng vọng. Thằng em mình học bách khoa cơ khí, sinh năm
+            96. Tự mày mò học code rồi đi làm remote cho công ty Mỹ 2 năm nay.
+            Mỗi tối online 3-4 giờ là xong việc. Lương tháng 3k6. Nhưng thu nhập
+            chính vẫn là từ nhận các project bên ngoài làm thêm. Tuần làm 2,3
+            cái nhẹ nhàng 9,10k tiền tươi thóc thật không phải đóng thuế. Làm
+            gần được 3 năm mà nhà xe nó đã mua đủ cả. Nghĩ mà thèm. Gái gú thì
+            cứ nghe nó bảo làm CNTT thì chảy nước. Có bé kia dân du học sinh Úc,
+            về được cô chị giới thiệu làm ngân hàng VCB. Thế nào thằng ấy đi mở
+            thẻ tín dụng gặp phải thế là hốt được cả chị lẫn em. 3 đứa nó sống
+            chung một căn hộ cao cấp. Nhà con bé kia biết chuyện ban đầu phản
+            đối sau biết thằng đấy học IT thì đổi thái độ, cách ba bữa hỏi thăm,
+            năm bữa tặng quà lấy long, luôn giục cưới kẻo lỡ kèo ngon.
+          </p>
+        </section>
+        <section id="projects">
+          <h1>💼 Projects</h1>
+          <p>
+            Thằng em mình học bách khoa cơ khí, bỏ ngang sang IT, sinh năm 96.
+            Tự mày mò học code rồi đi làm remote cho công ty Mỹ 2 năm nay. Mỗi
+            tối online 3-4 giờ là xong việc. Lương tháng 3k6. Nhưng thu nhập
+            chính vẫn là từ nhận các project bên ngoài làm thêm. Tuần làm 2,3
+            cái nhẹ nhàng 9,10k tiền tươi thóc thật không phải đóng thuế. Làm
+            gần được 3 năm mà nhà xe nó đã mua đủ cả. Nghĩ mà thèm.
+          </p>
+          <p>
+            Gái gú thì cứ nghe nó bảo làm CNTT thì chảy nước. Có bé kia dân du
+            học sinh Úc, về được cô chị giới thiệu làm ngân hàng VCB. Thế nào
+            thằng ấy đi mở thẻ tín dụng gặp phải thế là hốt được cả chị lẫn em.
+            3 đứa nó sống chung một căn hộ cao cấp. Nhà con bé kia biết chuyện
+            ban đầu phản đối sau biết thằng đấy học IT thì đổi thái độ, cách ba
+            bữa hỏi thăm, năm bữa tặng quà giục cưới kẻo lỡ kèo. Đáng lẽ tháng
+            này là đám cưới tụi nó nhưng dính covid nên dời lại cuối năm rồi.
+          </p>
+        </section>
+        <section id="contact">
+          <h1>📞 Contact-buổi 9</h1>
+          <p>Zalo:0836146065 </p>
+          <p>=)))))</p>
+        </section>
+        <section id="baitap">
+          <a href="assign2.htm">bài 2</a> <br />
+          <a href="vd14.htm">bài 3</a> <br />
+          <a href="vd2.htm">bài 1.1</a> <br />
+          <a href="vd3.htm">bài 1.2</a> <br />
+          <a href="vd4.htm">bài 1.3</a> <br />
+          <a href="vd5.htm">bài 1.4</a> <br />
+          <a href="vd6.htm">bài 1.5</a> <br />
+          <a href="vd6-1.htm">bài 1.6</a> <br />
+          <a href="vd7.htm">bài 1.7</a> <br />
+          <a href="vd8.htm">bài 1.8</a> <br />
+          <a href="vd10.htm">bài 1.9</a> <br />
+          <a href="vd11.htm">bài 1</a> <br />
+          <a href="vd12.htm">bài 1.10</a> <br />
+          <a href="vd13.htm">bài 1.11</a> <br />
+          <a href="index.htm">Trang chủ</a>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>\
